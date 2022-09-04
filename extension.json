@@ -1,0 +1,55 @@
+{
+  "name": "MW_EXT_Progress",
+  "version": "1.0.0",
+  "author": [
+    "[https://z17.dev/ z17 Dev]",
+    "[https://z17.cx/ z17 CX]",
+    "..."
+  ],
+  "url": "https://github.com/cmfstore",
+  "descriptionmsg": "mw-ext-progress-desc",
+  "license-name": "[https://choosealicense.com/licenses/mit/ MIT]",
+  "type": "parserhook",
+  "require": {
+    "MediaWiki": ">= 1.31.0",
+    "extensions": {
+      "MW_EXT_Kernel": "*"
+    }
+  },
+  "AutoloadClasses": {
+    "MediaWiki\\Extension\\CMFStore\\MW_EXT_Progress": "MW_EXT_Progress.class.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+      "MediaWiki\\Extension\\CMFStore\\MW_EXT_Progress::onParserFirstCallInit"
+    ],
+    "BeforePageDisplay": [
+      "MediaWiki\\Extension\\CMFStore\\MW_EXT_Progress::onBeforePageDisplay"
+    ]
+  },
+  "ExtensionMessagesFiles": {
+    "MW_EXT_ProgressMagic": "MW_EXT_Progress.i18n.magic.php"
+  },
+  "MessagesDirs": {
+    "MW_EXT_Progress": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.mw.progress.styles": {
+      "styles": [
+        "styles/theme.css"
+      ],
+      "position": "top",
+      "targets": [
+        "desktop",
+        "mobile"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "MW_EXT_Progress/modules"
+  },
+  "manifest_version": 2
+}
