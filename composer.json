@@ -1,5 +1,5 @@
 {
-  "name": "cmfstore/mediawiki-ext-progress",
+  "name": "zmarket/mediawiki-ext-progress",
   "type": "mediawiki-extension",
   "description": "MediaWiki progress extension.",
   "license": "MIT",
@@ -23,13 +23,13 @@
     }
   ],
   "support": {
-    "progresss": "https://github.com/cmfstore/mediawiki-ext-progress/progresss",
-    "source": "https://github.com/cmfstore/mediawiki-ext-progress"
+    "progresss": "https://github.com/zbox/mediawiki-ext-progress/progresss",
+    "source": "https://github.com/zbox/mediawiki-ext-progress"
   },
   "require": {
     "php": ">=7.2",
     "composer/installers": "^1.0.1",
-    "cmfstore/mediawiki-ext-kernel": "*"
+    "zmarket/mediawiki-ext-kernel": "*"
   },
   "autoload": {
     "classmap": [
